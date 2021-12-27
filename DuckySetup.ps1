@@ -28,7 +28,7 @@ $root = $dLetter + ":\"
 
 #copy hid folder:
 Write-Host "Copying hid library..."
-Copy-Item -Path adafruit_hid -Destination ($root + "lib\adafruit_hid")
+Copy-Item -Path adafruit_hid -Destination ($root + "lib\adafruit_hid") -recurse -force
 
 #copy code.py (duckyinpython.py):
 Write-Host "Copying code.py duckyinpython.py..."
